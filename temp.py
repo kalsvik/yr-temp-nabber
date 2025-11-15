@@ -119,6 +119,9 @@ def getRelevantSymbol(description: str):
             return "🌙"
         return "☀️"
 
+    if "cloudy" in description:
+        return "☁️"
+
     if "fog" in description:
         return "😶‍🌫️"
 
