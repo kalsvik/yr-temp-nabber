@@ -94,17 +94,17 @@ YR_LINK = "https://www.yr.no/api/v0/locations/1-92416/forecast/currenthour"
 
 
 def getRelevantSymbol(description: str):
-    if "rain" in description or "rain showers" in description:
+    if "rain" in description:
         if "thunder" in description:
             return "⛈️"
         return "🌧️"
 
-    if "snow" in description or "snow showers" in description:
+    if "snow" in description:
         if "thunder" in description:
             return "⛈️"
         return "🌨️"
 
-    if "sleet" in description or "sleet showers" in description:
+    if "sleet" in description:
         if "thunder" in description:
             return "⛈️"
         return "🌨️"
